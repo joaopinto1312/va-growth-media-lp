@@ -1,0 +1,171 @@
+:root {
+    --fundo-menu: #014f86;
+    --cor-fonte-principal: #ffffff;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-principal);
+    background: linear-gradient(100deg, rgba(14,13,41,1) 12%, rgba(24,22,71,1) 78%, rgba(34,57,97,1) 100%);
+    background-repeat: no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.cabecalho-titulo-1 {
+    display: block;
+    font-size: 1.75em;
+    color: var(--cor-fonte-principal);
+    padding: 0.6em;
+}
+
+.cabecalho-titulo-2 {
+    display: block;
+    font-size: 3em;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.cabecalho-menu-menu:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+nav a {
+    color: var(--cor-fonte-principal);
+    text-decoration: none;
+}
+
+.cabecalho-menu-botao {
+    background: linear-gradient(0deg, rgba(24,21,110,1) 0%, rgba(70,125,219,1) 100%);
+    color: var(--cor-fonte-principal);
+}
+
+.cabecalho-menu-botao:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.cabecalho-menu-botao {
+    border: transparent;
+    border-radius: 2em;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 4em 12em;
+}
+
+.principal {
+    background-image: url("/img/victor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-principal-texto {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin-bottom: 1rem;
+}
+
+.conteudo-principal-mensagem {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.conteudo-principal-botao {
+    border: transparent;
+    border-radius: 1.4rem;
+    background: linear-gradient(0deg, rgba(24,21,110,1) 0%, rgba(70,125,219,1) 100%);
+    padding: 1rem;
+    margin-top: 2em;
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--cor-fonte-principal);
+}
+
+.conteudo-principal-botao:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.servicos {
+    font-size: 2.6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.card {
+    background: linear-gradient(0deg, rgba(24,21,110,1) 0%, rgba(70,125,219,1) 100%);
+    border: 2px solid #FFFFFF;
+    box-shadow: 2px 2px 0;
+    max-width: 17rem;
+    padding: 0 0 0 1rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+.card-img {
+    margin: 1rem 5rem 1rem 5rem;
+}
+
+.card-texto {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-mensagem {
+    font-size: 1rem;
+}
